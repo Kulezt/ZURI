@@ -367,6 +367,9 @@ footer {
  footer{
     height: auto;
  }
+     .modal{
+    width: 90%;
+ }
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -430,3 +433,4 @@ footer {
     }
 
 }
+
