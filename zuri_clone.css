@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Averta;
+    src: url('../fonts/AvertaDemoPECuttedDemo-Regular_dghpn7.otf');
+}
+
+* {
+    font-family: Averta, sans-serif;
+}
+
+body {
+    color: rgb(98, 90, 90);
+}
+
+.page_1 {
+    align-items: center;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    display: flex;
+    height: 750px;
+    background: url(./Page_1/hero-bg.svg) no-repeat;
+    background-size: cover;
+
+}
+
+.logo1 {
+    margin-top: 70px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.content_1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 750px;
+
+}
+
+.content_1 h2 {
+    font-size: 2rem;
+}
+
+.text1 {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.content_1 a {
+    color: rgb(229, 51, 43);
+    text-decoration: none;
+}
+
+.need,
+.new {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(229, 51, 43);
+    padding: 13px 30px;
+}
+
+.new {
+    margin-right: 25px;
+    background-color: rgb(229, 51, 43);
+    color: white !important;
+}
+
+.new:hover {
+    background-color: transparent;
+    color: rgb(229, 51, 43) !important;
+}
+
+.need:hover {
+    background-color: rgb(229, 51, 43);
+    color: white !important;
+}
+
+.page_1b {
+    margin-top: 150px;
+    background-image: url(./Page_1/left_bvmv7q.png), url(./Page_1/right_yz6hn3.png);
+    background-position: left, right;
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+.page_1b h3 {
+    text-align: center;
+    color: rgb(229, 51, 43);
+    font-size: small;
+}
+
+.we {
+    text-align: center;
+    font-size: 25px;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_1,
+.box_2,
+.box_3 {
+    width: 400px;
+    height: 500px;
+    margin-right: 25px;
+    background-color: rgb(255, 250, 250);
+    margin-top: 30px;
+
+}
+
+.boxes img {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.boxes p {
+    line-height: 1.4;
+    font-size: 16px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: rgb(98, 90, 90);
+}
+
+.boxes a {
+    margin-left: 50px;
+    color: rgb(229, 51, 43);
+}
+
+footer {
+    margin-top: 200px !important;
+    height: 350px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+}
+
+.bottom a {
+    text-decoration: none;
+    color: rgb(229, 51, 43);
+}
+
+.socials img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bottom h3 {
+    font-size: medium;
+}
+
+.texts p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .page_1 h2 {
+        font-size: 1.7rem;
+        line-height: 34px;
+    }
+
+    .new,
+    .need {
+        display: block;
+        margin-right: 0 !important;
+    }
+
+    .page_1 {
+        height: auto;
+    }
+     .boxes>div{
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer>div {
+        align-items: center !important;
+    }
+
+    .footer>div>div {
+        text-align: center;
+
+    }
+
+    .footer h3 {
+        font-size: 20px;
+    }
+
+    .footer .texts a,
+    .footer .texts p {
+        font-size: 15px !important;
+    }
+
+    .boxes {
+        display: block;
+    }
+
+    .bottom {
+        display: block !important;
+    }
+
+    .footer {
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .boxes>div{
+        width: 90%;
+        margin: auto;
+    }
+    .boxes{
+        display: block;
+    }
+}

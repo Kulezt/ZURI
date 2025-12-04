@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .thumb-button {
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .thumb-icon,
+        .thumb-link {
+            color: white;
+            background-color: brown;
+
+        }
+
+        .thumb-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            padding: 10px;
+            z-index: 2;
+        }
+
+        .thumb-link {
+            margin-left: -12px;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+        }
+
+        header {
+            height: 100px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 5;
+            background-color: rgb(255, 253, 245);
+        }
+
+        .header-container {
+            padding: 15px 0;
+            max-width: 1240px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        .list>ul>li>a {
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 40px;
+            color: rgb(87, 83, 83);
+        }
+
+        main{
+            position: relative;
+            top: 100px;
+        }
+
+        .modal{
+            width: 40%;
+        }
+
+        #pop-btn{
+            text-decoration: none;
+            padding: 10px 16px;
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+
+        /* mobile */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+        }
+
+        /* tablet */
+        @media screen and (min-width: 769px) and (max-width: 991px) {}
+
+        /* desktop */
+        @media screen and (min-width: 992px) {}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="container">
+                <img src="./page_2/logo.svg" alt="">
+            </div>
+
+            <nav class="navbar">
+                <div class="list">
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Why Us</a></li>
+                        <li><a href="">Stacks Covered</a></li>
+                        <li><a href="">FAQS</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="thumb-button">
+                <div class="thumb-icon">
+                    <img src="./page_2/thumbs.png" alt="" style="width: 100%; height: 100%;">
+                </div>
+                <a href="#" class="thumb-link">Enroll Now</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="modal" style="padding: 20px;" popover id="msg">
+            <h3>New Message!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, pariatur. Alias beatae aspernatur
+                mollitia et animi, pariatur vel sunt voluptatem cumque commodi ex, sequi reiciendis optio perspiciatis.
+                Perferendis, dolore tenetur?</p>
+
+            <button popovertarget="msg" popovertargetaction="hide">X</button>
+        </div>
+
+        <button popovertarget="msg" id="pop-btn">Show Pop Up</button>
+
+    </main>
+</body>
+
+</html>
