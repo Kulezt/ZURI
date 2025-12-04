@@ -358,6 +358,15 @@ footer {
     .box_b>img {
         width: 100%;
     }
+    .button .btn{
+    display: flex;
+ }
+ .btn1, .btn2{
+    padding: 10px;
+ }
+ footer{
+    height: auto;
+ }
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -419,4 +428,5 @@ footer {
     .why_box{
         width: 45%;
     }
+
 }
